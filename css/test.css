@@ -1,0 +1,64 @@
+
+.emu .tolu .test {
+    color: cyan;
+}
+.emu .tolu .tolu1 {
+    color: brown;
+}
+.tolu {
+    color: yellow;
+}
+.test {
+    color: red;
+}
+
+.bacg-parallax {
+    padding: 150px 0;
+    color: #fff;
+    
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+}
+.bacg {
+	background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    top: 0;
+    z-index: 1;
+    background-image: url(../images/home-umn-c.jpg);
+    background-repeat: no-repeat;
+	
+}
+
+.bcg {
+    background: no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: url(../images/home-umn-c.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bcg:before {
+    content: "";
+    background-color: rgba(26, 30, 35, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content-wrapper {
+	width: 90%;
+	margin:0 auto;
+	max-width: 1140px;
+	position: relative;
+	z-index: 55;
+}
