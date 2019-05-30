@@ -1,5 +1,5 @@
-# Source Code for My Personal Website
+# GitHub page for my personal website testing
 
-A static website for my personal introduction.
+GitHub: [https://jakema2017.github.io](https://jakema2017.github.io)
 
-Link: [www.jakema2017.com](http://www.jakema2017.com)
+Real Page: [www.jakema2017.com](http://www.jakema2017.com)
