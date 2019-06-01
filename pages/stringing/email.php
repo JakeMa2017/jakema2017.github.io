@@ -12,6 +12,7 @@ $racketModel = $_POST["racketModel"];
 $racketColor = $_POST["racketColor"];
 $stringType = $_POST["string-type"];
 $stringTension = $_POST["string-tension"];
+$optionalMessage = $_POST["optionalMessage"];
 
 $subject = 'Stringing Service Received';
 $from = 'jakema@jakema2017.com';
@@ -58,6 +59,10 @@ $message .= '</tr>';
 $message .= '<tr>';
 $message .= '<th style="border:1px solid #dddddd;text-align:left;padding:8px;">String Tension</th>';
 $message .= '<td style="border:1px solid #dddddd;text-align:left;padding:8px;">'.$stringTension.'</td>';
+$message .= '</tr>';
+$message .= '<tr>';
+$message .= '<th style="border:1px solid #dddddd;text-align:left;padding:8px;">String Tension</th>';
+$message .= '<td style="border:1px solid #dddddd;text-align:left;padding:8px;">'.$optionalMessage.'</td>';
 $message .= '</tr>';
 $message .= '</table>';
 
