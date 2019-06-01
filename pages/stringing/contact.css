@@ -58,6 +58,10 @@ form {
     margin-right: auto;
 }
 
+.optional-message {
+    font-size: 18px;
+}
+
 /* === Message Page === */
 .message-container {
     width: 100%;
