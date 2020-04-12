@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="author" content="Jake Ma">
-	<link rel='icon' href='favicon.jpg?v=30' type='jpg'> 
+	<link rel='icon' href='./favicon.jpg?v=30' type='jpg'> 
 	<!-- Library -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/semantic-ui/semantic.min.css">
@@ -22,10 +22,14 @@
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     
-	<title>Message Sent</title>
+	<title>Badminton Racket Stringing Service</title>
 </head>
-<style>
-  body {
-    background: lightgreen;
-  }
-</style>
+
+<body>
+	<main>
+		<div class="col-md-8 mx-auto pt-5" style="padding-left: 10%; padding-bottom: 15%;">
+			<?php include 'todolist.php'; ?>
+		</div>
+	</main>
+</body>
+</html>

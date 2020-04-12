@@ -1,9 +1,8 @@
 <?php include 'email.html' ?>
 
-
 <?php
 // Multiple recipients
-$to = ''; // note the comma
+$to = '';
 
 $firstName = $_POST["firstName"];
 $lastName = $_POST["lastName"];
@@ -74,10 +73,30 @@ $message .= '-----';
 $message .= '<p style="padding: 0px;margin: 0px;"><strong>Jake Ma</strong></p>';
 $message .= '<p style="margin: 0px;padding: 0px;">jakema@jakema2017.com</p>';
  
-// Sending email
-if(mail($to, $subject, $message, implode("\r\n", $headers))){
-    echo 'Your mail has been sent successfully.';
-} else{
-    echo 'Unable to send email. Please try again.';
-}
 ?>
+<body>
+<main>
+  <div class="container-fluid message-container">
+    <div class="container message-box">
+        <div class="text-center">
+            <p class="message-success text-center">
+                <?php
+                //Sending email
+                if ($firstName === null || $lastName === null || $email === null || $stringType === null || $stringTension === null) {
+                    echo 'Invalid submission';
+                    echo '<style>body{background: red;}</style>';
+                } else if(mail($to, $subject, $message, implode("\r\n", $headers))){
+                    echo 'Message sent successfully!<br>Please check your inbox for a confirmation email.';
+                    echo '<div><img class="checkMark" src="css/check.png" alt="check"></div>';
+                } else{
+                    echo 'Unable to send email. Please try again.';
+                    echo '<style>body{background: yellow;}</style>';
+                }
+                ?>
+            </p>
+        </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
